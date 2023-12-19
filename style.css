@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+button{
+    /* width: 10vw; */
+    /* height: 7vh; */
+   padding: 6px;
+    font-size: .5rem;
+    border-radius: 8px;
+    border: 0;
+    background-color: pink;
+    color: red;
+    transition: all .3s;
+}
+
+button:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    background-image: url("heart-icon.png");
+    background-repeat: repeat;
+    background-size: 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    width: 60vw;
+    height: 60vh;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.content-container .initial-buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container .initial-buttons h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content-container .initial-buttons .buttons-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container .initial-buttons .buttons-container p {
+    font-size: .4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content-container .initial-buttons .buttons-container .buttons {
+    display: flex;
+    gap: 32px;
+    padding-top: 8px;
+}
+
+.content-container .display-options {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container .display-options h2 {
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content-container .display-options .boxes-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+
+.content-container .display-options .boxes-container .registred-options-container {
+    height: 100%;
+    width: 40%;
+    background-color: #fff;
+    font-size: .5rem;
+    border: pink 1px solid;
+    border-radius: 2px;
+    padding: 8px;
+    padding-left: 12px;
+    overflow-y: scroll;
+}
+
+.content-container .display-options .boxes-container .add-option-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    gap: 8px;
+}
+
+.content-container .display-options .boxes-container .add-option-form-container input{
+    border: 1px solid pink;
+    border-radius: 2px;
+    width: 80%;
+    height: 15%;
+    font-size: .5rem;
+    padding-left: 2px;
+}
+
+.content-container .display-options .boxes-container .add-option-form-container .buttons{
+    display: flex;
+    gap: 8px;
+}
+
+.content-container .draw-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-container .draw-container .result-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.content-container .draw-container .result-container .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.content-container .draw-container .result-container .result {
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 800;
+}
